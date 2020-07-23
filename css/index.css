@@ -2,8 +2,241 @@
 * @Author: TomChen
 * @Date:   2020-07-23 09:15:23
 * @Last Modified by:   TomChen
-* @Last Modified time: 2020-07-23 09:18:25
+* @Last Modified time: 2020-07-23 16:33:09
 */
-p{
-    color: green;
+
+/* 顶部导航
+---------------------------------------------------------------- */
+.top{
+    height: 30px;
+    line-height: 30px;
+    background-color: #f3f3f3;
+}
+.top .user-info{
+    float: left;
+}
+.top .nav-list{
+    float: right;
+}
+.top .nav-list .nav-item{
+    float: left;
+    margin-right: 10px;
+}
+.top .nav-list .nav-item .icon-Cart{
+    font-size: 12px;
+}
+/* 头部搜索
+---------------------------------------------------------------- */
+.header{
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid #52c41a;
+    margin-bottom: 30px;
+}
+.header .logo{
+    float: left;
+    line-height: 100px;
+}
+.header .logo a{
+    font-size: 30px;
+    color: #52c41a;
+    font-weight: bold;
+}
+.header .search-wrap{
+    float: left;
+}
+.header .search-wrap .search-box{
+    margin-top: 18px;
+}
+.header .search-wrap .search-input{
+    float: left;
+    width: 400px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border:2px solid #52c41a;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.header .search-wrap .search-btn{
+    float: left;
+    width: 100px;
+    height: 42px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #52c41a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+.header .search-wrap .search-btn:hover{
+    opacity: .7;
+}
+.header .search-wrap .nav-list{
+    margin-top: 15px;
+}
+.header  .nav-list .nav-item{
+    float: left;
+    margin-right: 20px;
+}
+.header  .nav-list .nav-item a{
+    font-size: 16px;
+    font-weight: 200;
+}
+/* 焦点区域
+---------------------------------------------------------------- */
+.focus{
+    margin-bottom: 40px;
+}
+.focus .categories{
+    float: left;
+    height: 440px;
+    background-color: #fff;
+}
+.focus .categories .parent-categories{
+    padding: 20px 0;
+}
+.focus .categories .parent-categories .parent-categories-item{
+    line-height: 40px;
+    padding-left: 10px;
+}
+.focus .categories .parent-categories .keyword-item{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.focus .categories .parent-categories .parent-categories-item:hover{
+    background-color: #eee;
+}
+
+.focus .swiper{
+    float: left;
+    height: 440px;
+    position: relative;
+}
+.focus .swiper .img-wrap,.focus .swiper .img-item{
+    width: 100%;
+    height: 100%;
+}
+.focus .swiper .img-wrap img{
+    width: 100%;
+    height: 100%;
+}
+.focus .swiper .img-item{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.focus .swiper .arrow{
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top:50%;
+    margin-top: -30px;
+    font-size: 40px;
+    color: #007aff;
+    cursor: pointer;
+    user-select: none;
+
+}
+.focus .swiper .left-arrow{
+    left:0;
+}
+.focus .swiper .right-arrow{
+    right: 0;
+}
+.focus .swiper .btn-wrap{
+    width: 70px;
+    position: absolute;
+    left:50%;
+    bottom: 10px;
+    margin-left: -35px;
+}
+.focus .swiper .btn-wrap .btn{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.focus .swiper .btn-wrap .btn.active{
+     background-color:#52c41a;
+}
+/* 热销区域
+---------------------------------------------------------------- */
+.hot{
+    margin-bottom: 30px;
+}
+
+.hot .hot-card{
+    float: left;
+    height: 300px;
+    box-sizing: border-box;
+    background-image: linear-gradient(#007aff,#52c41a);
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    box-shadow: 1px 2px 2px rgba(0,0,0,.3);
+}
+.hot .hot-card h4{
+    margin-bottom: 20px;
+}
+.hot .hot-card .icon-Cart{
+    font-size: 35px;
+}
+.hot .product-list{
+    float: left;
+}
+.hot .product-list .product-item{
+    float: left;
+    box-sizing: border-box;
+    height: 300px;
+    background-color: #fff;
+    text-align: center;
+    padding:20px 10px;
+    transition: all 0.3s;
+}
+.hot .product-list .product-item:hover{
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+}
+.hot .product-list .product-item a:hover{
+    color: #333;
+}
+.hot .product-list .product-item:last-child{
+    margin-right: 0;
+}
+.hot .product-list .product-item .product-name{
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+.hot .product-list .product-item .product-price{
+    float: left;
+    font-size: 14px;
+    color: #f21;
+}
+.hot .product-list .product-item .paynum{
+    float: right;
+    color: #aaa;
+}
+/* 楼层
+---------------------------------------------------------------- */
+.floor{
+
+}
+.floor .container{
+    height: 600px;
+    background-color: yellow;
+}
+/* 底部
+---------------------------------------------------------------- */
+.footer{
+    height: 252px;
+    background-color: black;
 }
